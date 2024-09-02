@@ -34,7 +34,7 @@ export default function PantallaLogin() {
     }
 
 	return (
-		<main className="bg-[url('https://i.pinimg.com/originals/80/93/eb/8093eb596b38846d47cf30feb907d68f.gif')] min-h-screen bg-cover bg-center flex justify-center items-center">
+		<main className="bg-[url('https://elcomercio.pe/resizer/6XqsG2CAdwMjWOAAm7J_t1B6HoA=/1920x768/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/GZDEHTLXKZA6VDR4MHFLO7XIII.jpg')] min-h-screen bg-cover bg-center flex justify-center items-center">
 			<form
 				className="flex flex-col gap-6 backdrop-blur-sm bg-white/10 md:w-2/5 sm:w-1/2 lg:w-2/6 xl:w-1/4 w-3/4 h-96 justify-center items-center border rounded-lg"
 				action=""
