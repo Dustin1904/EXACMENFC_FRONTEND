@@ -16,7 +16,6 @@ export default function Dashboard() {
 				}
 			);
 			setPerfil(respuesta.data);
-			console.log(respuesta.data);
 		} catch (error) {
 			console.log("Error: ", error);
 		}

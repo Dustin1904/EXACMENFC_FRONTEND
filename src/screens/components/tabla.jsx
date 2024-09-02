@@ -36,12 +36,14 @@ export default function TablaRegistros({ registros , informacion = [] , classNam
 			//delete respuesta.data[0]._id;
 			//const ticketsRecibidos = Object.keys(respuesta.data[0]);
 			//setColumnas(columnasSinId);
-			//setDatos(informacion)
+			setDatos(informacion)
+			console.log(respuesta.data);
 			const columnasSinId = Object.keys(respuesta.data[0]).filter(
 				(columna) => columna !== "_id"
 			);
 			setColumnas([...columnasSinId]);
 			setDatos(respuesta.data);
+			
 		} catch (error) {
 			console.log(error);
 		}
@@ -84,6 +86,8 @@ export default function TablaRegistros({ registros , informacion = [] , classNam
 
 	useEffect(() => {
 		handleGetData();
+		console.log();
+		 	
 	}, []);
 
 	return (
@@ -122,7 +126,8 @@ export default function TablaRegistros({ registros , informacion = [] , classNam
 										dato[columna] !== null ? (
 											<>
 												{" "}
-												{dato[columna].nombre} {dato[columna].apellido}{" "}
+												{dato[columna].nombre || dato[columna].placa} {dato[columna].apellido}{" "}
+
 											</>
 										) : columna.includes("fecha") ? (
 											formatearFecha(dato[columna])
